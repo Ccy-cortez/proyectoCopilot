@@ -1,0 +1,16 @@
+<h1>Dashboard de Proyectos</h1>
+
+<app-grafico-de-barras
+  [titulo]="'Proyectos por Categoría'"
+  [datos]="{ data: barChartData, labels: barChartLabels, options: barChartOptions }">
+</app-grafico-de-barras>
+
+<div style="display: block; width: 600px; margin: 2rem auto;">
+  <canvas baseChart
+    [data]="lineChartData"
+    [labels]="lineChartLabels"
+    [options]="lineChartOptions"
+    [type]="'line'"
+    [legend]="true">
+  </canvas>
+</div>

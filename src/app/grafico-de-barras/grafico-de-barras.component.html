@@ -1,0 +1,9 @@
+<h2>{{ titulo }}</h2>
+<div style="display: block; width: 600px; margin: 2rem auto;">
+  <canvas baseChart
+    [data]="datos.data"
+    [labels]="datos.labels"
+    [options]="datos.options"
+    chartType="bar">
+  </canvas>
+</div>
